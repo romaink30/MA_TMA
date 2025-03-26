@@ -22,7 +22,7 @@ if ($file['error'] !== UPLOAD_ERR_OK) {
 }
 
 // Vérification de l'extension
-$allowed_extensions = ['jpg', 'jpeg', 'png', 'pdf'];
+$allowed_extensions = ['pdf'];
 $file_extension = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
 
 if (!in_array($file_extension, $allowed_extensions)) {
